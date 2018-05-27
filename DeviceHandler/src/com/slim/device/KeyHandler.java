@@ -260,7 +260,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 Context.MODE_PRIVATE | Context.MODE_MULTI_PROCESS);
     }
 
-    public boolean handleKeyEvent(KeyEvent event) {
+    public KeyEvent handleKeyEvent(KeyEvent event) {
 		Log.d(TAG, "KeyEvent: " + event);
         if (event.getAction() != KeyEvent.ACTION_UP) {
             return event;
