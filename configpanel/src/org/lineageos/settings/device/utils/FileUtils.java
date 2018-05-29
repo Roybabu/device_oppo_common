@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.util;
+package org.lineageos.settings.device.utils;
 
 import android.util.Log;
 
