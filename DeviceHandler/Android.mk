@@ -23,4 +23,10 @@ LOCAL_PACKAGE_NAME := DeviceHandler
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_DEX_PREOPT := false
 
+LOCAL_RESOURCE_DIR := \
+    $(LOCAL_PATH)/res \
+    $(LOCAL_PATH)/../../../../packages/resources/OppoGestures/res
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay
+
 include $(BUILD_PACKAGE)

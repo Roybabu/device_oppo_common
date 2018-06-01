@@ -23,32 +23,20 @@
 
         <activity
             android:name=".settings.ScreenOffGestureSettings"
-            android:label="@string/screen_off_gesture_title"
+            android:label="@string/screen_off_gestures_title"
             android:theme="@style/DeviceHandlerTheme">
-          <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-          </intent-filter>
-          <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
-          <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
         </activity>
 
         <activity
             android:name=".settings.SliderSettings"
             android:theme="@style/DeviceHandlerTheme"
-            android:label="@string/notification_slider">
-            <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_additional_buttons" />
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
+            android:label="@string/notification_slider_title">
+        </activity>
+
+        <activity
+            android:name=".settings.MainPanel"
+            android:theme="@style/DeviceHandlerTheme"
+            android:label="@string/gestures_title">
         </activity>
 
         <receiver android:name=".BootReceiver" >
