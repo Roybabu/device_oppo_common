@@ -24,20 +24,6 @@ LOCAL_PACKAGE_NAME := ConfigPanel
 LOCAL_MODULE_TAGS := optional
 LOCAL_PRIVATE_PLATFORM_APIS := true
 
-LOCAL_USE_AAPT2 := true
-
-LOCAL_STATIC_ANDROID_LIBRARIES := \
-    android-support-v4 \
-    android-support-v7-appcompat \
-    android-support-v7-preference \
-    android-support-v7-recyclerview \
-    android-support-v13 \
-    android-support-v14-preference
-
-LOCAL_STATIC_JAVA_LIBRARIES := \
-    org.lineageos.platform.internal
->>>>>>> faeefcd... configpanel: Set LOCAL_PRIVATE_PLATFORM_APIS
-
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \
     $(LOCAL_PATH)/../../../../packages/resources/OppoGestures/res
